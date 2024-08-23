@@ -1,41 +1,88 @@
-# Post-it
+# EasyMed - Medication Reminder App
 
-## CSCI 3230U - Web App Development
-Course Final Project <br>
-Faculty of Science, Ontario Tech University <br>
-April 27, 2022 <br>
+![post-it-branding (3)](https://github.com/user-attachments/assets/bcfa04be-c143-4fdb-bfd9-0ebc832b0390)
 
-## Project Group 19:
-| Group Member Name | Student ID | GitHub Username (GitHub URL)|
-| :------------------------:|:------------------------:|:--------------------------------------:|
-| Preet Panchal | 100707094 | [preet-panchal](https://github.com/preet-panchal) |
-| Eihab Syed | 100707448 | [EihabSyed](https://github.com/EihabSyed) |
-| Fahad Bhatti | 100749152 | [FahadBhatti](https://github.com/FahadBhatti424) |
-| Kaathihan Luxmachandran | 100704762 | [Kaathihan](https://github.com/Kaathihan) |
-| Sukhpreet Bansal | 100705684 | [Sukhpreet-7](https://github.com/Sukhpreet-7) |
+## Description
+EasyMed is a mobile application designed to assist users in managing their medication schedules. The app addresses common issues such as forgetting to take medication or misunderstanding instructions. By offering features like medication reminders, instructions, and pharmacy connectivity, EasyMed aims to improve medication adherence, especially for individuals with chronic illnesses or complex medication regimens.
 
-## About Post-It:
-Inspired by renowned platforms like Twitter and Reddit, Post-It is a web-based application that we developed to allow complete freedom of speech and to speak whatever is on your mind. Users can sign up for accounts for free and create posts for others to see. Post-It lets users share their stories with passion and save the moments that really matter. So, what's the hold-up? Start posting now!
+## Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Architecture](#architecture)
+- [Technologies Used](#technologies-used)
+- [Contributors](#contributors)
+- [Contributing](#contributing)
 
-## Stack:
-MongoDB, Express, Vue, Node (MEVN)
-Node version 16.1.0
+## Overview
+EasyMed allows users to:
+- Scan or manually enter medication information.
+- Set up personalized medication schedules.
+- Receive reminders and notifications for medication times.
+- Connect with local pharmacists for medication review and refills.
 
-## How to Run:
-1) Clone repo or download ZIP folder
-2) Open new terminal
-3) Locate client directory: `cd client`
-4) Install dependencies in client: `npm install`
-5) Locate server directory: `cd ../server`
-6) Install dependencies in server: `npm install`
-7) Run app using: `npm run deploy`
-8) Now the application should be running on `port 3000`. You may access the app on `http://localhost:3000/`
-9) **Log-in:** `test@test.com` **Password:** `test1234` 
+## Features
+- **Multiple Screens & Navigation**: Intuitive navigation across login, home, search, map, and profile pages.
+- **Dialogs & Pickers**: User-friendly interfaces for adding medications.
+- **Snackbars & Notifications**: Real-time updates and reminders for medication schedules.
+- **Local & Cloud Storage**: Data persistence using SQLite for local storage and Firebase for cloud storage.
+- **Geolocation & Geocoding**: Locate nearby pharmacies and display them on an interactive map.
+- **Internationalization**: Support for multiple languages on the profile page.
 
-## Demo:
-Please watch this short demo video to get help running the app or
-simply view the app: https://www.youtube.com/watch?v=WcF2pAM4968
+## Installation
 
-## Independent Study:
-Deployment done using DigitalOcean. <br>
-Please see `Post-It Project Independent Study.pdf` for presentation on integration. 
+### Prerequisites
+- Android Studio or a compatible IDE
+- Flutter SDK
+- Firebase account for backend services
+
+### Steps
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Kaathihan/EasyMed.git
+2. **Open the project in Android Studio.**
+3. **Configure Firebase:**
+      - Add your SHA-1 and SHA-256 keys to the Firebase project settings.
+4. **Install dependencies:**
+   ```
+   flutter pub get
+   ```
+5. **Run the application:**
+   ```
+   flutter run
+   ```
+
+### Usage
+- Login with Google: Add SHA keys to Firebase and log in using your Google account.
+- Guest Access: Explore the app's features without logging in, except for the profile page.
+- Medication Management: Add medications to your schedule and receive timely reminders.
+- Pharmacy Locator: Use the map feature to find nearby pharmacies.
+
+### Architecture
+- Frontend: Developed using Flutter for a seamless cross-platform experience.
+- Backend: Firebase for authentication, cloud storage, and real-time database.
+
+### Technologies Used
+- Languages: Dart
+- Framework: Flutter
+- Backend: Firebase
+- APIs: Google Maps API for geolocation and geocoding
+
+### Contributors
+- Fadi Chamas 
+- Chanuka Goonetileke 
+- Kaathihan Luxmachandran
+- Preet Panchal 
+- Eihab Syed
+  
+### Contributing
+
+   1. Contributions are welcome! Please follow these steps:
+   2. Fork the repository.
+   3. Create a new branch: git checkout -b feature/YourFeature
+   4. Commit your changes: git commit -m 'Add some feature'
+   5. Push to the branch: git push origin feature/YourFeature
+   6. Open a pull request.
+
+      
