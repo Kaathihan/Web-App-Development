@@ -1,88 +1,112 @@
-# EasyMed - Medication Reminder App
+# Post-It Web Application
 
 ![post-it-branding (3)](https://github.com/user-attachments/assets/bcfa04be-c143-4fdb-bfd9-0ebc832b0390)
 
 ## Description
-EasyMed is a mobile application designed to assist users in managing their medication schedules. The app addresses common issues such as forgetting to take medication or misunderstanding instructions. By offering features like medication reminders, instructions, and pharmacy connectivity, EasyMed aims to improve medication adherence, especially for individuals with chronic illnesses or complex medication regimens.
+The Post-It Web Application is a social media platform inspired by popular sites like Twitter and Reddit. It allows users to freely express their thoughts and share stories with others. Developed as part of the Web App Development course at Ontario Tech University, this project showcases skills in full-stack development using the MEVN stack (MongoDB, Express, Vue, Node).
 
 ## Table of Contents
-- [Overview](#overview)
-- [Features](#features)
+- [About Post-It](#about-post-it)
+- [Stack](#stack)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Architecture](#architecture)
+- [Demo](#demo)
+- [Deployment](#deployment)
+- [Project Structure](#project-structure)
 - [Technologies Used](#technologies-used)
 - [Contributors](#contributors)
 - [Contributing](#contributing)
 
-## Overview
-EasyMed allows users to:
-- Scan or manually enter medication information.
-- Set up personalized medication schedules.
-- Receive reminders and notifications for medication times.
-- Connect with local pharmacists for medication review and refills.
+## About Post-It
+Post-It is designed to provide users with a platform for free speech and sharing moments that matter. Users can sign up for free, create posts, and engage with a community of like-minded individuals.
 
-## Features
-- **Multiple Screens & Navigation**: Intuitive navigation across login, home, search, map, and profile pages.
-- **Dialogs & Pickers**: User-friendly interfaces for adding medications.
-- **Snackbars & Notifications**: Real-time updates and reminders for medication schedules.
-- **Local & Cloud Storage**: Data persistence using SQLite for local storage and Firebase for cloud storage.
-- **Geolocation & Geocoding**: Locate nearby pharmacies and display them on an interactive map.
-- **Internationalization**: Support for multiple languages on the profile page.
+## Stack
+- **Front-end**: Vue.js
+- **Back-end**: Node.js, Express
+- **Database**: MongoDB
+- **Node Version**: 16.1.0
 
 ## Installation
 
 ### Prerequisites
-- Android Studio or a compatible IDE
-- Flutter SDK
-- Firebase account for backend services
+- Node.js (version 16.1.0)
+- npm
 
 ### Steps
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/Kaathihan/EasyMed.git
-2. **Open the project in Android Studio.**
-3. **Configure Firebase:**
-      - Add your SHA-1 and SHA-256 keys to the Firebase project settings.
-4. **Install dependencies:**
+   git clone https://github.com/Kaathihan/Web-App-Development.git
+2. **Navigate to the client directory:**
    ```
-   flutter pub get
+   cd Web-App-Development/client
    ```
-5. **Run the application:**
+3. **Install client dependencies:**
    ```
-   flutter run
+   npm install
    ```
-
+4. **Navigate to the server directory:**
+   ```
+   cd ../server
+   ```
+5. **Install server dependencies:**
+   ```
+   npm install
+   ```
+6. **Run the application:**
+   ```
+   npm run deploy
+   ```
+7. **Access the application at:**
+   ```
+   http://localhost:3000/
+   ```
+   
 ### Usage
-- Login with Google: Add SHA keys to Firebase and log in using your Google account.
-- Guest Access: Explore the app's features without logging in, except for the profile page.
-- Medication Management: Add medications to your schedule and receive timely reminders.
-- Pharmacy Locator: Use the map feature to find nearby pharmacies.
+- Login Credentials for Demo:
+   - Email: test@test.com
+   - Password: test1234
 
-### Architecture
-- Frontend: Developed using Flutter for a seamless cross-platform experience.
-- Backend: Firebase for authentication, cloud storage, and real-time database.
+### Demo
+Watch the demo video to see the application in action: [Demo Video](https://www.youtube.com/watch?v=WcF2pAM4968)
+
+### Deployment
+The application is deployed on DigitalOcean, utilizing Droplets for cloud-based infrastructure.
+
+### Project Structure 
+  ```
+  /Web-App-Development
+    /client
+      /src
+        /components
+        /views
+        /assets
+    /server
+      /models
+      /routes
+      /controllers
+    .env
+    README.md
+  ```
+- /client: Contains the front-end Vue.js application.
+- /server: Houses the back-end Node.js application.
 
 ### Technologies Used
-- Languages: Dart
-- Framework: Flutter
-- Backend: Firebase
-- APIs: Google Maps API for geolocation and geocoding
+- Front-end: Vue.js
+- Back-end: Node.js, Express
+- Database: MongoDB
+- Deployment: DigitalOcean
 
 ### Contributors
-- Fadi Chamas 
-- Chanuka Goonetileke 
-- Kaathihan Luxmachandran
-- Preet Panchal 
+- Preet Panchal
 - Eihab Syed
-  
-### Contributing
+- Fahad Bhatti
+- Kaathihan Luxmachandran
+- Sukhpreet Bansal
 
+### Contributing
    1. Contributions are welcome! Please follow these steps:
    2. Fork the repository.
    3. Create a new branch: git checkout -b feature/YourFeature
    4. Commit your changes: git commit -m 'Add some feature'
    5. Push to the branch: git push origin feature/YourFeature
    6. Open a pull request.
-
-      
